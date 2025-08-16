@@ -1,0 +1,140 @@
+{
+  "camps": [
+    {
+      "id": "camp_1",
+      "name": "Spiritual Retreat Camp",
+      "type": "Tented Accommodation",
+      "location": "Ramkund Banks",
+      "price": 800,
+      "rating": 4.2,
+      "distance": "0.2 km",
+      "amenities": ["Basic Bedding", "Shared Bathrooms", "Meals Included", "Security"],
+      "image": "/placeholder-camp.jpg",
+      "availability": "Available",
+      "capacity": 4
+    },
+    {
+      "id": "camp_2",
+      "name": "Kumbh Village Camp",
+      "type": "Dormitory Style",
+      "location": "Tapovan Area",
+      "price": 600,
+      "rating": 3.8,
+      "distance": "0.8 km",
+      "amenities": ["Mattress", "Blankets", "Common Area", "Food Court"],
+      "image": "/placeholder-camp.jpg",
+      "availability": "Limited",
+      "capacity": 8
+    },
+    {
+      "id": "camp_3",
+      "name": "Luxury Tent City",
+      "type": "Premium Tents",
+      "location": "Panchvati Zone",
+      "price": 2500,
+      "rating": 4.7,
+      "distance": "1.2 km",
+      "amenities": ["AC Tents", "Attached Bathrooms", "24/7 Service", "Cultural Programs"],
+      "image": "/placeholder-camp.jpg",
+      "availability": "Available",
+      "capacity": 2
+    }
+  ],
+  "hotels": [
+    {
+      "id": "hotel_1",
+      "name": "Hotel Panchavati",
+      "type": "Budget Hotel",
+      "location": "Panchavati Road",
+      "price": 1200,
+      "rating": 3.8,
+      "distance": "0.5 km",
+      "amenities": ["WiFi", "AC", "Room Service", "Parking"],
+      "image": "/placeholder-hotel.jpg",
+      "availability": "Available",
+      "capacity": 2
+    },
+    {
+      "id": "hotel_2",
+      "name": "Hotel Raj Palace",
+      "type": "Business Hotel",
+      "location": "MG Road",
+      "price": 1800,
+      "rating": 4.0,
+      "distance": "1.2 km",
+      "amenities": ["WiFi", "Restaurant", "Parking", "Conference Room"],
+      "image": "/placeholder-hotel.jpg",
+      "availability": "Available",
+      "capacity": 3
+    },
+    {
+      "id": "hotel_3",
+      "name": "Hotel Sai Palace",
+      "type": "Premium Hotel",
+      "location": "Mumbai Highway",
+      "price": 4500,
+      "rating": 4.5,
+      "distance": "2.5 km",
+      "amenities": ["Pool", "Spa", "Multi-cuisine Restaurant", "Conference Hall"],
+      "image": "/placeholder-hotel.jpg",
+      "availability": "Limited",
+      "capacity": 2
+    }
+  ],
+  "lodges": [
+    {
+      "id": "lodge_1",
+      "name": "Ramkund Lodge",
+      "type": "Basic Lodge",
+      "location": "Near Ramkund Ghat",
+      "price": 500,
+      "rating": 3.2,
+      "distance": "0.1 km",
+      "amenities": ["Basic Room", "Common Bath", "Fan", "Security"],
+      "image": "/placeholder-lodge.jpg",
+      "availability": "Available",
+      "capacity": 2
+    },
+    {
+      "id": "lodge_2",
+      "name": "Ganga Bhavan Trust",
+      "type": "Dharamshala",
+      "location": "Tapovan Road",
+      "price": 400,
+      "rating": 3.7,
+      "distance": "0.8 km",
+      "amenities": ["Dormitory", "Meals", "Library", "Prayer Hall"],
+      "image": "/placeholder-lodge.jpg",
+      "availability": "Available",
+      "capacity": 6
+    }
+  ],
+  "premiumStays": [
+    {
+      "id": "premium_1",
+      "name": "Grand Tulip Resort",
+      "type": "Luxury Resort",
+      "location": "Pathardi Phata",
+      "price": 7500,
+      "rating": 4.7,
+      "distance": "3.0 km",
+      "amenities": ["Luxury Rooms", "Gym", "Business Center", "24/7 Service", "Pool", "Spa"],
+      "image": "/placeholder-premium.jpg",
+      "availability": "Available",
+      "capacity": 2
+    },
+    {
+      "id": "premium_2",
+      "name": "Heritage Palace",
+      "type": "Heritage Hotel",
+      "location": "City Center",
+      "price": 6000,
+      "rating": 4.4,
+      "distance": "1.8 km",
+      "amenities": ["Heritage Rooms", "Fine Dining", "Cultural Shows", "Concierge"],
+      "image": "/placeholder-premium.jpg",
+      "availability": "Limited",
+      "capacity": 2
+    }
+  ]
+}

@@ -1,0 +1,138 @@
+{
+  "trains": [
+    {
+      "id": "train_1",
+      "name": "Nashik Express",
+      "from": "Mumbai Central",
+      "to": "Nashik Road",
+      "departure": "06:15",
+      "arrival": "10:30",
+      "duration": "4h 15m",
+      "price": 450,
+      "availability": "Available",
+      "class": "Sleeper",
+      "seats": 120
+    },
+    {
+      "id": "train_2",
+      "name": "Panchavati Express",
+      "from": "Mumbai CST",
+      "to": "Nashik Road",
+      "departure": "14:20",
+      "arrival": "18:10",
+      "duration": "3h 50m",
+      "price": 380,
+      "availability": "RAC",
+      "class": "General",
+      "seats": 45
+    },
+    {
+      "id": "train_3",
+      "name": "Tapovan Express",
+      "from": "Pune Junction",
+      "to": "Nashik Road",
+      "departure": "07:45",
+      "arrival": "12:30",
+      "duration": "4h 45m",
+      "price": 320,
+      "availability": "Available",
+      "class": "Sleeper",
+      "seats": 89
+    },
+    {
+      "id": "train_4",
+      "name": "Godavari Express",
+      "from": "Delhi",
+      "to": "Nashik Road",
+      "departure": "22:15",
+      "arrival": "14:40+1",
+      "duration": "16h 25m",
+      "price": 1250,
+      "availability": "Waiting List",
+      "class": "AC 3 Tier",
+      "seats": 12
+    }
+  ],
+  "flights": [
+    {
+      "id": "flight_1",
+      "airline": "IndiGo",
+      "flightNumber": "6E-234",
+      "from": "Mumbai (BOM)",
+      "to": "Nashik (ISK)",
+      "departure": "08:30",
+      "arrival": "09:45",
+      "duration": "1h 15m",
+      "price": 4500,
+      "availability": "Available",
+      "seats": 28
+    },
+    {
+      "id": "flight_2",
+      "airline": "Air India",
+      "flightNumber": "AI-891",
+      "from": "Delhi (DEL)",
+      "to": "Nashik (ISK)",
+      "departure": "11:20",
+      "arrival": "13:15",
+      "duration": "1h 55m",
+      "price": 6800,
+      "availability": "Available",
+      "seats": 15
+    },
+    {
+      "id": "flight_3",
+      "airline": "SpiceJet",
+      "flightNumber": "SG-456",
+      "from": "Bangalore (BLR)",
+      "to": "Nashik (ISK)",
+      "departure": "16:10",
+      "arrival": "18:30",
+      "duration": "2h 20m",
+      "price": 5200,
+      "availability": "Limited",
+      "seats": 8
+    }
+  ],
+  "buses": [
+    {
+      "id": "bus_1",
+      "operator": "MSRTC Shivneri",
+      "from": "Mumbai Central",
+      "to": "Nashik CBS",
+      "departure": "05:30",
+      "arrival": "09:15",
+      "duration": "3h 45m",
+      "price": 280,
+      "availability": "Available",
+      "type": "AC Sleeper",
+      "seats": 35
+    },
+    {
+      "id": "bus_2",
+      "operator": "Raj Travels",
+      "from": "Pune Station",
+      "to": "Nashik",
+      "departure": "22:00",
+      "arrival": "03:30+1",
+      "duration": "5h 30m",
+      "price": 450,
+      "availability": "Available",
+      "type": "Volvo AC",
+      "seats": 22
+    },
+    {
+      "id": "bus_3",
+      "operator": "VRL Travels",
+      "from": "Hyderabad",
+      "to": "Nashik",
+      "departure": "20:15",
+      "arrival": "08:45+1",
+      "duration": "12h 30m",
+      "price": 850,
+      "availability": "Limited",
+      "type": "Multi-Axle",
+      "seats": 6
+    }
+  ]
+}
