@@ -7,7 +7,7 @@ import { Clock, MapPin, Users, Star, Calendar, Bell, ShoppingCart } from 'lucide
 import { useToast } from '@/hooks/use-toast';
 import { addBooking } from '@/utils/localStorage';
 import heroImage from '@/assets/hero-ramkund.jpg';
-import Jagadguru from '@/assets/jagadguru shankaracharya.jpeg';
+import Jagadguru from '@/assets/Jagadguru Shankaracharya.jpeg';
 import Chidanand from '@/assets/Swami-Chidanand.jpeg';
 import babanirmal from '@/assets/nirmal-das.jpeg';
 import morari from '@/assets/morari.jpeg';
