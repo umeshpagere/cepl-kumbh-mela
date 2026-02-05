@@ -157,7 +157,7 @@ const Contact = () => {
             </CardHeader>
             <CardContent>
               <form
-                action="https://formspree.io/f/meozdpjr" // Replace with your Formspree endpoint
+                action="https://formspree.io/f/meozdpjr" 
                 method="POST"
                 className="space-y-4"
               >
@@ -242,8 +242,8 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold text-foreground">Email</h3>
-                    <p className="text-muted-foreground">info@nashikkumbh2027.com</p>
-                    <p className="text-muted-foreground">support@nashikkumbh2027.com</p>
+                    <p className="text-muted-foreground">abc@gmail.com</p>
+                    <p className="text-muted-foreground">support@gmail.com</p>
                   </div>
                 </div>
 
@@ -253,8 +253,8 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold text-foreground">Phone</h3>
-                    <p className="text-muted-foreground">+91 253 2550200</p>
-                    <p className="text-muted-foreground">+91 90000 12345 (WhatsApp)</p>
+                    <p className="text-muted-foreground">+91 xxxxxxxxx</p>
+                    <p className="text-muted-foreground">+91 xxxxxxxxx (WhatsApp)</p>
                   </div>
                 </div>
 

@@ -5,47 +5,54 @@ import { Button } from '@/components/ui/button';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { MapPin, Clock, Utensils, Leaf, ExternalLink } from 'lucide-react';
 
+import misalpav from '@/assets/misalpav.jpeg';
+import pithalabhakari from '@/assets/pithalabhakari.jpeg';
+import sabudana from '@/assets/sabudana.jpeg';
+import bharli from '@/assets/bharli.jpeg';
+import puranpoli from '@/assets/puranpoli.jpeg'; 
+import mutton from '@/assets/mutton.jpeg';
+
 const Food = () => {
   const localDishes = [
     {
       name: 'Misal Pav',
       description: 'Spicy curry made with sprouts, topped with onions, tomatoes and served with pav bread',
-      image: '/api/placeholder/300/200',
+      image: misalpav,
       category: 'veg',
       spiceLevel: 'Hot'
     },
     {
       name: 'Pithla Bhakri',
       description: 'Traditional gram flour curry served with thick millet bread, a rural Maharashtra specialty',
-      image: '/api/placeholder/300/200',
+      image: pithalabhakari,
       category: 'veg',
       spiceLevel: 'Medium'
     },
     {
       name: 'Sabudana Khichdi',
       description: 'Fasting-friendly dish made with tapioca pearls, peanuts, and potatoes',
-      image: '/api/placeholder/300/200',
+      image: sabudana,
       category: 'veg',
       spiceLevel: 'Mild'
     },
     {
       name: 'Bharli Vangi',
       description: 'Stuffed baby eggplants cooked in spiced masala, a regional delicacy',
-      image: '/api/placeholder/300/200',
+      image: bharli,
       category: 'veg',
       spiceLevel: 'Medium'
     },
     {
       name: 'Puran Poli',
       description: 'Sweet flatbread stuffed with jaggery and lentil filling, perfect festival dessert',
-      image: '/api/placeholder/300/200',
+      image: puranpoli,
       category: 'veg',
       spiceLevel: 'Sweet'
     },
     {
       name: 'Mutton Curry',
       description: 'Traditional Maharashtrian goat curry with authentic spices and herbs',
-      image: '/api/placeholder/300/200',
+      image: mutton,
       category: 'non-veg',
       spiceLevel: 'Hot'
     }
@@ -160,7 +167,9 @@ const Food = () => {
               >
                 <div className="aspect-video bg-muted/30 flex items-center justify-center">
                   <div className="text-center">
-                    <Utensils className="w-12 h-12 text-primary mx-auto mb-2" />
+                    <img
+                    src={dish.image}
+                     className="w-full h-full " />
                     <p className="text-sm text-muted-foreground">{dish.name}</p>
                   </div>
                 </div>

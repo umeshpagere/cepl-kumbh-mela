@@ -4,6 +4,11 @@ import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { MapPin, Clock, Camera, ExternalLink, Star, Users } from 'lucide-react';
 import heroImage from '@/assets/hero-ramkund.jpg';
+import trimbakeshwar from '@/assets/trimbakeshwar.jpeg';
+import kalaram from '@/assets/kalaram.jpeg';
+import panchavti from '@/assets/panchavti.jpeg';
+import sita from '@/assets/sita.jpeg';
+import tapovan from '@/assets/tapovan.jpeg';
 
 // Add these imports for react-leaflet
 import 'leaflet/dist/leaflet.css';
@@ -26,7 +31,7 @@ const Locations = () => {
     {
       name: 'Trimbakeshwar Temple',
       description: 'One of the twelve Jyotirlingas, this ancient Shiva temple is the source of river Godavari and holds immense religious significance.',
-      image: heroImage,
+      image: trimbakeshwar,
       category: 'Temple',
       visitingHours: '5:30 AM - 9:00 PM',
       significance: 'One of 12 Jyotirlingas',
@@ -38,7 +43,7 @@ const Locations = () => {
     {
       name: 'Kalaram Mandir',
       description: 'Historic black stone temple dedicated to Lord Rama, known for its beautiful architecture and spiritual atmosphere.',
-      image: heroImage,
+      image: kalaram,
       category: 'Temple',
       visitingHours: '6:00 AM - 12:00 PM, 4:00 PM - 9:00 PM',
       significance: 'Historic Rama temple with black stone idol',
@@ -50,7 +55,7 @@ const Locations = () => {
     {
       name: 'Panchvati',
       description: 'Sacred grove where Lord Rama, Sita, and Lakshmana spent their exile. The area has five ancient banyan trees.',
-      image: heroImage,
+      image: panchavti,
       category: 'Sacred Grove',
       visitingHours: '6:00 AM - 7:00 PM',
       significance: "Rama's exile location with 5 sacred trees",
@@ -62,7 +67,7 @@ const Locations = () => {
     {
       name: 'Sita Gumpha',
       description: 'Cave where Sita is believed to have taken shelter. Located on Panchavati hills with beautiful views of the city.',
-      image: heroImage,
+      image: sita,
       category: 'Cave Temple',
       visitingHours: '7:00 AM - 6:00 PM',
       significance: "Sita's shelter during exile",
@@ -74,7 +79,7 @@ const Locations = () => {
     {
       name: 'Tapovan',
       description: 'Sacred meditation ground where saints and sages perform penance. Center for spiritual activities during Kumbh.',
-      image: heroImage,
+      image: tapovan,
       category: 'Spiritual Center',
       visitingHours: '24 Hours',
       significance: 'Meditation and spiritual center',
@@ -188,17 +193,28 @@ const Locations = () => {
                       ))}
                     </div>
                   </div>
-
                   {/* Action Buttons */}
                   <div className="flex gap-2">
-                    <Button size="sm" className="flex-1">
-                      <MapPin className="w-4 h-4 mr-2" />
-                      Get Directions
-                    </Button>
-                    <Button size="sm" variant="outline" className="flex-1">
-                      <Camera className="w-4 h-4 mr-2" />
-                      View Gallery
-                    </Button>
+                    <a
+                      href={`https://www.google.com/maps/dir/?api=1&destination=${location.lat},${location.lng}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex-1"
+                    >
+                      <Button size="sm" className="w-full flex items-center justify-center">
+                        <MapPin className="w-4 h-4 mr-2" />
+                        Get Directions
+                      </Button>
+                    </a>
+                    <a
+                      href="/gallery"
+                      className="flex-1"
+                    >
+                      <Button size="sm" variant="outline" className="w-full flex items-center justify-center">
+                        <Camera className="w-4 h-4 mr-2" />
+                        View Gallery
+                      </Button>
+                    </a>
                   </div>
                 </CardContent>
               </Card>
@@ -242,31 +258,7 @@ const Locations = () => {
                 </MapContainer>
               </div>
               
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                <Card className="bg-muted/20 border-border/30">
-                  <CardContent className="p-4 text-center">
-                    <MapPin className="w-8 h-8 text-primary mx-auto mb-2" />
-                    <h4 className="font-semibold text-foreground">GPS Navigation</h4>
-                    <p className="text-sm text-muted-foreground">Turn-by-turn directions</p>
-                  </CardContent>
-                </Card>
-                
-                <Card className="bg-muted/20 border-border/30">
-                  <CardContent className="p-4 text-center">
-                    <Users className="w-8 h-8 text-primary mx-auto mb-2" />
-                    <h4 className="font-semibold text-foreground">Crowd Updates</h4>
-                    <p className="text-sm text-muted-foreground">Real-time density info</p>
-                  </CardContent>
-                </Card>
-                
-                <Card className="bg-muted/20 border-border/30">
-                  <CardContent className="p-4 text-center">
-                    <Clock className="w-8 h-8 text-primary mx-auto mb-2" />
-                    <h4 className="font-semibold text-foreground">Best Times</h4>
-                    <p className="text-sm text-muted-foreground">Optimal visiting hours</p>
-                  </CardContent>
-                </Card>
-              </div>
+              
             </CardContent>
           </Card>
         </section>

@@ -7,9 +7,18 @@ import { Clock, MapPin, Users, Star, Calendar, Bell, ShoppingCart } from 'lucide
 import { useToast } from '@/hooks/use-toast';
 import { addBooking } from '@/utils/localStorage';
 import heroImage from '@/assets/hero-ramkund.jpg';
+import Jagadguru from '@/assets/jagadguru shankaracharya.jpeg';
+import Chidanand from '@/assets/Swami-Chidanand.jpeg';
+import babanirmal from '@/assets/nirmal-das.jpeg';
+import morari from '@/assets/morari.jpeg';
+import sadhavi from '@/assets/sadhavi.jpeg.webp';
+import acharya from '@/assets/acharya.jpeg';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
+import { LatLngExpression } from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 
+
+export
 const AartiSaints = () => {
   const [timeFilter, setTimeFilter] = useState('all');
   const { toast } = useToast();
@@ -127,7 +136,7 @@ const AartiSaints = () => {
       campLocation: 'Tapovan Sector 1',
       origin: 'Dwarka, Gujarat',
       teachings: 'Advaita Vedanta and spiritual enlightenment',
-      image: heroImage,
+      image: Jagadguru,
       followers: '500,000+',
       speciality: 'Vedic philosophy and meditation',
       lat: 19.9971,
@@ -139,7 +148,7 @@ const AartiSaints = () => {
       campLocation: 'Ramkund Area',
       origin: 'Rishikesh, Uttarakhand',
       teachings: 'Environmental consciousness and Yoga',
-      image: heroImage,
+      image: Chidanand,
       followers: '300,000+',
       speciality: 'Ganga conservation and spiritual healing',
       lat: 19.9965,
@@ -151,7 +160,7 @@ const AartiSaints = () => {
       campLocation: 'Panchvati Zone',
       origin: 'Ujjain, Madhya Pradesh',
       teachings: 'Bhakti and devotional practices',
-      image: heroImage,
+      image: babanirmal,
       followers: '200,000+',
       speciality: 'Devotional singing and community service',
       lat: 19.9978,
@@ -163,7 +172,7 @@ const AartiSaints = () => {
       campLocation: 'Tapovan Sector 2',
       origin: 'Gujarat',
       teachings: 'Ram Katha and moral values',
-      image: heroImage,
+      image: morari,
       followers: '1,000,000+',
       speciality: 'Storytelling and social reform',
       lat: 19.9982,
@@ -175,7 +184,7 @@ const AartiSaints = () => {
       campLocation: 'Godavari Banks',
       origin: 'Himachal Pradesh',
       teachings: 'Women empowerment and dharma',
-      image: heroImage,
+      image: sadhavi,
       followers: '400,000+',
       speciality: 'Social service and cultural preservation',
       lat: 19.9987,
@@ -187,7 +196,7 @@ const AartiSaints = () => {
       campLocation: 'Medical Camp Zone',
       origin: 'Haryana',
       teachings: 'Ayurveda and natural healing',
-      image: heroImage,
+      image: acharya,
       followers: '250,000+',
       speciality: 'Herbal medicine and wellness',
       lat: 19.9910,
@@ -413,14 +422,14 @@ const AartiSaints = () => {
                 style={{ height: 400, width: '100%', overflow: 'hidden' }}
               >
                 <MapContainer
-                  center={[19.9971, 73.7865]}
+                  center={[19.9971, 73.7865] as LatLngExpression}
                   zoom={15}
                   style={{ width: '100%', height: '100%' }}
                   scrollWheelZoom={true}
                 >
                   <TileLayer
                     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-                    attribution='&copy; <a href="https://openstreetmap.org">OpenStreetMap</a> contributors'
+                    attribution={'&copy; <a href="https://openstreetmap.org">OpenStreetMap</a> contributors'}
                   />
                   {saints.map((saint) => (
                     <Marker key={saint.name} position={[saint.lat, saint.lng]}>
@@ -435,31 +444,7 @@ const AartiSaints = () => {
                 </MapContainer>
               </div>
               
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                <Card className="bg-muted/20 border-border/30">
-                  <CardContent className="p-4 text-center">
-                    <Users className="w-8 h-8 text-primary mx-auto mb-2" />
-                    <h4 className="font-semibold text-foreground">Camp Locations</h4>
-                    <p className="text-sm text-muted-foreground">Find saint camps easily</p>
-                  </CardContent>
-                </Card>
-                
-                <Card className="bg-muted/20 border-border/30">
-                  <CardContent className="p-4 text-center">
-                    <Calendar className="w-8 h-8 text-primary mx-auto mb-2" />
-                    <h4 className="font-semibold text-foreground">Event Schedule</h4>
-                    <p className="text-sm text-muted-foreground">Satsang and discourse timings</p>
-                  </CardContent>
-                </Card>
-                
-                <Card className="bg-muted/20 border-border/30">
-                  <CardContent className="p-4 text-center">
-                    <Clock className="w-8 h-8 text-primary mx-auto mb-2" />
-                    <h4 className="font-semibold text-foreground">Live Updates</h4>
-                    <p className="text-sm text-muted-foreground">Real-time activity status</p>
-                  </CardContent>
-                </Card>
-              </div>
+              
             </CardContent>
           </Card>
         </section>

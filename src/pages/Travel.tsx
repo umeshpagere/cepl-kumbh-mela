@@ -11,6 +11,12 @@ const Travel = () => {
   const { toast } = useToast();
   const availableTransportRef = React.useRef<HTMLDivElement>(null);
 
+  const sampleTrains = [
+    { id: 1, name: 'Shatabdi Express', from: 'Mumbai', to: 'Nashik', price: 1500, availability: 'Available' },
+    { id: 2, name: 'Garib Rath', from: 'Delhi', to: 'Nashik', price: 2000, availability: 'Available' },
+    { id: 3, name: 'Duronto Express', from: 'Pune', to: 'Nashik', price: 1200, availability: 'Available' }
+  ];
+
   const handleBookTransport = (item: any, mode: string) => {
     addBooking({
       id: item.id,
@@ -218,7 +224,8 @@ const Travel = () => {
                   <Train className="w-5 h-5 text-primary" />
                   Available Trains
                 </h3>
-                {transportData.trains.slice(0, 3).map((train) => (
+
+                {sampleTrains.map((train) => (
                   <Card key={train.id} className="shadow-card hover-lift bg-card/90">
                     <CardContent className="p-4">
                       <div className="flex justify-between items-start mb-2">

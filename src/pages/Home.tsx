@@ -19,6 +19,10 @@ import {
   Luggage
 } from 'lucide-react';
 import heroImage from '@/assets/hero-ramkund.jpg';
+import ramkund from '@/assets/ramkund.jpeg';
+import trimbakeshwar from '@/assets/trimbakeshwar.jpeg';
+import panchavati from '@/assets/panchavti.jpeg';
+
 
 const Home = () => {
   const [isBookingWizardOpen, setIsBookingWizardOpen] = useState(false);
@@ -87,19 +91,19 @@ const Home = () => {
     {
       name: 'Ramkund',
       description: 'Most sacred bathing ghat where devotees take holy dip',
-      image: heroImage, // Using the same hero image as placeholder
+      image: ramkund, // Using the same hero image as placeholder
       link: '/locations'
     },
     {
       name: 'Trimbakeshwar',
       description: 'Ancient Shiva temple, one of 12 Jyotirlingas',
-      image: heroImage,
+      image: trimbakeshwar,
       link: '/locations'
     },
     {
       name: 'Panchvati',
       description: 'Where Lord Rama spent 14 years in exile',
-      image: heroImage,
+      image: panchavati,
       link: '/locations'
     }
   ];

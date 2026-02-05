@@ -4,7 +4,15 @@ import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Camera, Users, Calendar, Heart, Download, Share, ZoomIn } from 'lucide-react';
-import heroImage from '@/assets/hero-ramkund.jpg';
+import image1 from '@/assets/image1.jpeg';
+import image2 from '@/assets/image2.jpeg';
+import image3 from '@/assets/image3.jpeg';
+import image4 from '@/assets/image4.jpeg';
+import image5 from '@/assets/image5.jpeg';
+import image6 from '@/assets/image6.jpeg';
+import image7 from '@/assets/image7.jpeg';
+import image8 from '@/assets/image8.jpeg';
+import image9 from '@/assets/image9.jpeg';
 
 const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
@@ -14,63 +22,63 @@ const Gallery = () => {
   const galleryImages = [
     {
       id: 1,
-      src: heroImage,
+      src: image1,
       title: 'Morning Aarti at Ramkund',
       category: 'aarti',
       description: 'Thousands gather for the sacred morning prayers at Ramkund ghat'
     },
     {
       id: 2,
-      src: heroImage,
+      src: image2,
       title: 'Jagadguru Shankaracharya',
       category: 'saints',
       description: 'Spiritual leader blessing devotees at his camp'
     },
     {
       id: 3,
-      src: heroImage,
+      src: image3,
       title: 'Shahi Snan Procession',
       category: 'processions',
       description: 'Magnificent procession of saints heading to the holy river'
     },
     {
       id: 4,
-      src: heroImage,
+      src: image4,
       title: 'Devotees in Prayer',
       category: 'devotees',
       description: 'Pilgrims from across India participating in the spiritual gathering'
     },
     {
       id: 5,
-      src: heroImage,
+      src: image5,
       title: 'Evening Aarti Ceremony',
       category: 'aarti',
       description: 'Beautiful evening prayers with oil lamps lighting the ghats'
     },
     {
       id: 6,
-      src: heroImage,
+      src: image6,
       title: 'Naga Sadhus March',
       category: 'saints',
       description: 'Sacred procession of Naga sadhus during Kumbh festivities'
     },
     {
       id: 7,
-      src: heroImage,
+      src: image7,
       title: 'Cultural Performance',
       category: 'processions',
       description: 'Traditional cultural programs showcasing Indian heritage'
     },
     {
       id: 8,
-      src: heroImage,
+      src: image8,
       title: 'Families Taking Holy Dip',
       category: 'devotees',
       description: 'Multi-generational families experiencing the sacred bath together'
     },
     {
       id: 9,
-      src: heroImage,
+      src: image9,
       title: 'Sunrise at Godavari',
       category: 'aarti',
       description: 'Breathtaking sunrise over the sacred Godavari river'
